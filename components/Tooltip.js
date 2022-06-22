@@ -117,6 +117,7 @@ function TooltipContent(props, ref) {
     e.nativeEvent.stopImmediatePropagation()
     props.changeTooltip()
   }
+  console.log(props,'=====')
   return (
     // React.cloneElement(props.children,{ref:RCBtnRef,onClick:onclick})
     <div ref={RCBtnRef} onClick={onclick} id="RCBtn">{props.children}</div>
